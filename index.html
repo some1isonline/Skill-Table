@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Skills & Technologies Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td {
+            background-color: #fafafa;
+        }
+        .checkbox-group {
+            margin-left: 20px;
+        }
+        .message {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Skills & Technologies Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Topic</th>
+                    <th>Skills & Technologies</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. Programming Languages</td>
+                    <td>C, C++, Java, Python</td>
+                    <td>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="C"> C</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="C++"> C++</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Java"> Java</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Python"> Python</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2. Data Structures and Algorithms</td>
+                    <td>Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Heaps, Recursion, Dynamic Programming, Greedy Algorithms</td>
+                    <td>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Arrays"> Arrays</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Linked Lists"> Linked Lists</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Stacks"> Stacks</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Queues"> Queues</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Trees"> Trees</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Graphs"> Graphs</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Heaps"> Heaps</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Recursion"> Recursion</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Dynamic Programming"> Dynamic Programming</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Greedy Algorithms"> Greedy Algorithms</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3. Database Management</td>
+                    <td>SQL (MySQL, PostgreSQL), NoSQL (MongoDB)</td>
+                    <td>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="MySQL"> MySQL</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="PostgreSQL"> PostgreSQL</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="MongoDB"> MongoDB</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4. Web Development</td>
+                    <td>Frontend: HTML, CSS, JavaScript, React, Angular | Backend: Node.js, Django, Spring Boot</td>
+                    <td>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="HTML"> HTML</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="CSS"> CSS</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="JavaScript"> JavaScript</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="React"> React</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Angular"> Angular</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Node.js"> Node.js</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Django"> Django</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Spring Boot"> Spring Boot</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5. Core CS Concepts</td>
+                    <td>Operating Systems, Computer Networks, Compiler Design, Software Engineering and SDLC</td>
+                    <td>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Operating Systems"> Operating Systems</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Computer Networks"> Computer Networks</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Compiler Design"> Compiler Design</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Software Engineering"> Software Engineering</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="SDLC"> SDLC</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6. Tools and Technologies</td>
+                    <td>Version Control Systems: Git, GitHub | IDE/Editors: VSCode, IntelliJ, PyCharm | Cloud Platforms: AWS, Azure, GCP</td>
+                    <td>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Git"> Git</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="GitHub"> GitHub</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="VSCode"> VSCode</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="IntelliJ"> IntelliJ</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="PyCharm"> PyCharm</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="AWS"> AWS</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Azure"> Azure</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="GCP"> GCP</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7. Data Analytics</td>
+                    <td>Tools: Excel, Tableau, Power BI, SQL, Google Analytics | Techniques: Data visualization, querying, reporting, statistical analysis</td>
+                    <td>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Excel"> Excel</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Tableau"> Tableau</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Power BI"> Power BI</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="SQL"> SQL</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Google Analytics"> Google Analytics</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Data visualization"> Data visualization</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Querying"> Querying</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Statistical analysis"> Statistical analysis</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8. Data Science</td>
+                    <td>Tools: Python, R, TensorFlow, PyTorch, Hadoop, Spark | Techniques: Machine Learning, AI, Big Data Processing, Predictive Modeling, Deep Learning</td>
+                    <td>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Python"> Python</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="R"> R</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="TensorFlow"> TensorFlow</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="PyTorch"> PyTorch</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Hadoop"> Hadoop</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Spark"> Spark</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Machine Learning"> Machine Learning</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="AI"> AI</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Big Data Processing"> Big Data Processing</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Predictive Modeling"> Predictive Modeling</label><br>
+                        <label><input type="checkbox" class="skill-checkbox" data-skill="Deep Learning"> Deep Learning</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="message" id="message">
+            <!-- Skill acquisition message will appear here -->
+        </div>
+
+        <div class="level" id="level">
+            <!-- Level will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        const totalSkills = document.querySelectorAll('.skill-checkbox').length;
+
+        function updateLevel() {
+            const checkedCount = document.querySelectorAll('.skill-checkbox:checked').length;
+            const progress = Math.round((checkedCount / totalSkills) * 100);
+            let level = '';
+
+            if (progress === 100) {
+                level = 'Radiant';
+            } else if (progress >= 90) {
+                level = 'Immortal 3';
+            } else if (progress >= 80) {
+                level = 'Immortal 2';
+            } else if (progress >= 70) {
+                level = 'Immortal 1';
+            } else if (progress >= 60) {
+                level = 'Ascendant 3';
+            } else if (progress >= 50) {
+                level = 'Ascendant 2';
+            } else if (progress >= 40) {
+                level = 'Ascendant 1';
+            } else if (progress >= 30) {
+                level = 'Diamond 3';
+            } else if (progress >= 20) {
+                level = 'Diamond 2';
+            } else if (progress >= 10) {
+                level = 'Diamond 1';
+            } else if (progress >= 5) {
+                level = 'Platinum 3';
+            } else if (progress >= 3) {
+                level = 'Platinum 2';
+            } else if (progress >= 1) {
+                level = 'Platinum 1';
+            } else if (progress === 0) {
+                level = 'Iron 1';
+            }
+
+            document.getElementById('level').innerText = `Level: ${level}`;
+        }
+
+        document.querySelectorAll('.skill-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    document.getElementById('message').innerText = 'Skill acquired!';
+                } else {
+                    document.getElementById('message').innerText = '';
+                }
+                updateLevel();
+            });
+        });
+
+        updateLevel();
+    </script>
+</body>
+</html>
